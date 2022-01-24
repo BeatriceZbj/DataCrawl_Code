@@ -75,7 +75,7 @@ for link in range(393,len(html)):
     likes = driver.find_element_by_xpath('(//div[@id="top-level-buttons-computed"]//ytd-toggle-button-renderer[1]//yt-formatted-string)[1]').get_attribute('aria-label')
     dislikes = driver.find_element_by_xpath('(//div[@id="top-level-buttons-computed"]//ytd-toggle-button-renderer[2]//yt-formatted-string)[1]').get_attribute('aria-label')
     time = driver.find_element_by_xpath('//div[@id="info-strings"]//yt-formatted-string[@class="style-scope ytd-video-primary-info-renderer"]').text
-    # 滑动到某一个指定的位置
+
     scroll_add_crowd_button = driver.find_element_by_xpath('//span[@class="view-count style-scope ytd-video-view-count-renderer"]')
 
     driver.execute_script("arguments[0].scrollIntoView();", scroll_add_crowd_button)
